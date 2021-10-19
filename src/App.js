@@ -11,49 +11,59 @@ import TestPrice from './Pages/Home/TestPrice/TestPrice';
 import About from './About/About';
 import Specialist from './Specialist/Specialist';
 import NotFound from './NotFound/NotFound';
+import AuthProvider from './context/AuthProvider';
+import Login from './Pages/Login/Login';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <HomePage></HomePage>
-          </Route>
-          <Route path="/home">
-            <HomePage></HomePage>
-          </Route>
-          <Route path="/serviceDetails">
-            <Header></Header>
-            <ServiceDetails></ServiceDetails>
-            <Footer></Footer>
-          </Route>
-          <Route path="/about">
-            <Header></Header>
-            <About></About>
-            <Footer></Footer>
-          </Route>
-          <Route path="/services">
-            <Header></Header>
-            <Services></Services>
-            <Footer></Footer>
-          </Route>
-          <Route path="/specialist">
-            <Header></Header>
-            <Specialist></Specialist>
-            <Footer></Footer>
-          </Route>
-          <Route path="/pricing">
-            <Header></Header>
-            <TestPrice></TestPrice>
-            <Footer></Footer>
-          </Route>
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <HomePage></HomePage>
+            </Route>
+            <Route path="/home">
+              <HomePage></HomePage>
+            </Route>
+            <Route path="/serviceDetails">
+              <Header></Header>
+              <ServiceDetails></ServiceDetails>
+              <Footer></Footer>
+            </Route>
+            <Route path="/about">
+              <Header></Header>
+              <About></About>
+              <Footer></Footer>
+            </Route>
+            <Route path="/services">
+              <Header></Header>
+              <Services></Services>
+              <Footer></Footer>
+            </Route>
+            <PrivateRoute path="/specialist">
+              <Header></Header>
+              <Specialist></Specialist>
+              <Footer></Footer>
+            </PrivateRoute>
+            <Route path="/login">
+              <Header></Header>
+              <Login></Login>
+              <Footer></Footer>
+            </Route>
+            <PrivateRoute path="/pricing">
+              <Header></Header>
+              <TestPrice></TestPrice>
+              <Footer></Footer>
+            </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+        </Router>
+      </AuthProvider>
 
     </div>
   );
