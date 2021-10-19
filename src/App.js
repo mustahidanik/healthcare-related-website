@@ -9,6 +9,8 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Services from './Pages/Home/Services/Services';
 import TestPrice from './Pages/Home/TestPrice/TestPrice';
 import About from './About/About';
+import Specialist from './Specialist/Specialist';
+import NotFound from './NotFound/NotFound';
 
 
 function App() {
@@ -23,24 +25,32 @@ function App() {
             <HomePage></HomePage>
           </Route>
           <Route path="/serviceDetails">
-            <Header />
+            <Header></Header>
             <ServiceDetails></ServiceDetails>
-            <Footer />
+            <Footer></Footer>
           </Route>
           <Route path="/about">
-            <Header />
+            <Header></Header>
             <About></About>
-            <Footer />
+            <Footer></Footer>
           </Route>
           <Route path="/services">
-            <Header />
-            <Services />
-            <Footer />
+            <Header></Header>
+            <Services></Services>
+            <Footer></Footer>
+          </Route>
+          <Route path="/specialist">
+            <Header></Header>
+            <Specialist></Specialist>
+            <Footer></Footer>
           </Route>
           <Route path="/pricing">
-            <Header />
+            <Header></Header>
             <TestPrice></TestPrice>
-            <Footer />
+            <Footer></Footer>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>
