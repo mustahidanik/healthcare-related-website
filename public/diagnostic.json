@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "CT scan",
+        "img": "https://previews.123rf.com/images/wavebreakmediamicro/wavebreakmediamicro1701/wavebreakmediamicro170100405/69181350-patient-undergoing-ct-scan-test-in-the-hospital.jpg",
+        "description": "A CT (computed tomography) scan is a type of x-ray that creates 3-dimensional images of your body, including bones, organs, tissues and tumours."
+    },
+    {
+        "id": 2,
+        "name": "Electrocardiogram (ECG)",
+        "img": "https://urgentmednetwork.com/wp-content/uploads/2019/07/Three-Things-an-EKG-Can-Tell.featured.png",
+        "description": "Doctor may suggest that you have an electrocardiogram (ECG) to find out how well your heart is working. An ECG is a simple and painless test that measures the electrical activity of your heart."
+    },
+    {
+        "id": 3,
+        "name": "MRI scan",
+        "img": "https://www.physio-pedia.com/images/f/f5/211.jpg",
+        "description": "A magnetic resonance imaging (MRI) scan takes detailed pictures of the inside of the body. It can show up problems in the soft tissues without the need for surgery."
+    },
+    {
+        "id": 4,
+        "name": "Biopsy",
+        "img": "https://images.medicinenet.com/images/article/main_image/liver-biopsy.jpg",
+        "description": "A biopsy involves taking a small piece of tissue from the body so that it can be tested. This helps to diagnose disease."
+    },
+    {
+        "id": 5,
+        "name": "Ultrasound",
+        "img": "https://images.squarespace-cdn.com/content/v1/55388599e4b098ec0027a49d/1437166421135-OTM8AGTP6SIBGAO8C4QK/4046678_4x3.jpg",
+        "description": "An ultrasound scan creates a real-time picture of the inside of the body using sound waves. Ultrasound is generally painless and non-invasive. Ultrasound works differently to x-ray in that it does not use radiation."
+    },
+    {
+        "id": 6,
+        "name": "X-rays",
+        "img": "https://previews.123rf.com/images/leaf/leaf1301/leaf130100221/17213637-young-male-patient-going-through-x-ray-test.jpg",
+        "description": "An x-ray uses radiation to create a picture of the inside of the body. The x-ray beam is absorbed differently by various structures in the body, such as bones and soft tissues, and this is used to create the image."
+    },
+    {
+        "id": 7,
+        "name": "Eye tests",
+        "img": "http://www.dishaeye.org/blog/wp-content/uploads/2019/05/eye-test-1024x683.jpg",
+        "description": "Regular eye tests with an optometrist can help make sure your eyes are in good health. They can pick up problems with your eyes before you notice anything."
+    },
+    {
+        "id": 8,
+        "name": "Hearing test",
+        "img": "https://88ebd614d6d385cab1fa-690979800f2b6f086ae14b7920465b0b.ssl.cf2.rackcdn.com/migrated/sites/doctorshearingservices.net/assets/hearing-exam-2.jpg",
+        "description": "If you have hearing loss, or think your hearing may be damaged, you can arrange to have a hearing test."
+    }
+]
